@@ -1,5 +1,5 @@
 {
-  "name": "movie-app-1",
+  "name": "react-movieapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.17"
   },
-  "homepage": "https://ozguryildiz54.github.io/react-movieapp"
+  "homepage": "https://yldzozgur.github.io/react-movieapp"
 }

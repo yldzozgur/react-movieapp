@@ -16,7 +16,6 @@ export default function Navbar() {
 
 const {cikis,currentUser}=useContext(AuthContextt)
 
-console.log(currentUser);
 
   //tailwindui.com/components/preview adresinden navbar aldık ve navigation, mobile menu button, open, Disclosure.Panel sildik
   return (

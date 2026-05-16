@@ -4,7 +4,6 @@ import MovieCard from "../components/MovieCard";
 const Main = () => {
   const { filmler, loading } = useContext(MovieContextt);
 
-  console.log(filmler);
 
   return (
     <div>

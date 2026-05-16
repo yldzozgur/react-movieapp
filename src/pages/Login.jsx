@@ -26,7 +26,7 @@ const handleSubmit=(e)=>{
 
           <div className="relative z-0 w-full mb-5 group">
             <input
-              class=" peer"
+              className=" peer"
               placeholder=" "
               name="floating_email"
               type="email"
@@ -37,7 +37,7 @@ const handleSubmit=(e)=>{
           </div>
           <div className="relative z-0 w-full mb-5 group">
             <input
-              class=" peer"
+              className=" peer"
               placeholder=" "
               name="floating_password"
               type="password"

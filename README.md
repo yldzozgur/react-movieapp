@@ -6,13 +6,9 @@ A React + Tailwind CSS movie discovery app powered by the TMDB API, with Firebas
 ![Movie App Demo](./movie.gif)
 
 ## Features
-- Browse movies (popular/discover)
-- Search movies by title
-- Movie detail page (poster, overview, rating, etc.)
-- Firebase Auth:
-  - Email/Password login & register
-  - Google Sign-In
-- Protected routes (requires login)
+- Browse popular movies and search by title
+- Movie detail page (poster, overview, rating)
+- Firebase Auth: Email/Password and Google Sign-In
 
 ## Tech Stack
 - React (Create React App)
@@ -22,69 +18,57 @@ A React + Tailwind CSS movie discovery app powered by the TMDB API, with Firebas
 - TMDB API
 
 ## Project Structure (src/)
-- `assets/icons/` icons & static assets
-- `auth/` Firebase auth/config helpers
+- `assets/icons/` icons and static assets
+- `auth/` Firebase configuration
 - `components/` reusable UI components
-- `context/` global state (Auth context)
-- `helpers/` utility functions (API helpers, constants)
-- `pages/` pages (Home, Detail, Login, Register, etc.)
-- `router/` routes + protected route logic
+- `context/` global state (Auth and Movie context)
+- `helpers/` toast notification helper
+- `pages/` Main, MovieDetail, Login, Register
+- `router/` route definitions
 - `App.js` app shell
 - `index.js` entry
 
----
+## Run Locally
 
-# Run Locally (3 Steps)
+1. Clone and install:
 
-## 1) Install
-```bash
-git clone https://github.com/ozguryildiz54/react-movieapp.git
-cd react-movieapp
-npm install
-2) Create .env (IMPORTANT)
-Create a file named .env in the project root (same folder as package.json, NOT inside src).
+   ```bash
+   git clone https://github.com/yldzozgur/react-movieapp.git
+   cd react-movieapp
+   npm install
+   ```
 
-Path must look like:
+2. Create a `.env` file in the project root (next to `package.json`):
 
-bash
-react-movieapp/.env
-react-movieapp/package.json
-react-movieapp/src/
-Put this inside .env:
+   ```env
+   REACT_APP_TMDB_KEY=your_tmdb_api_key
 
-env
-# TMDB
-REACT_APP_TMDB_API_KEY=your_tmdb_api_key_here
+   REACT_APP_apiKey=your_firebase_api_key
+   REACT_APP_authDomain=your_firebase_auth_domain
+   REACT_APP_projectId=your_firebase_project_id
+   REACT_APP_storageBucket=your_firebase_storage_bucket
+   REACT_APP_messagingSenderId=your_firebase_sender_id
+   REACT_APP_appId=your_firebase_app_id
+   ```
 
-# Firebase (Auth)
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_sender_id
-REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
-3) Run
-bash
-npm start
-Open:
+3. Start the dev server:
 
-http://localhost:3000
+   ```bash
+   npm start
+   ```
 
-Scripts
-bash
-npm start
-npm run build
-npm test
-Roadmap
-Pagination / infinite scroll
+   Open http://localhost:3000
 
-Favorites / watchlist
+## Scripts
+- `npm start` runs the dev server
+- `npm run build` creates a production build
+- `npm test` runs tests
 
-Loading skeletons + better error handling
+## Roadmap
+- Pagination / infinite scroll
+- Favorites / watchlist
+- Loading skeletons and better error handling
 
-Basic tests (React Testing Library)
-
-Author
-Özgür Yıldız
-GitHub: https://github.com/ozguryildiz54
-LinkedIn: https://linkedin.com/in/ozguryildiz0
+## Author
+Ozgur Yildiz
+[GitHub](https://github.com/yldzozgur) | [LinkedIn](https://linkedin.com/in/yldzozgur)
